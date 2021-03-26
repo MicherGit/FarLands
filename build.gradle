@@ -17,6 +17,10 @@ repositories {
         name "CottonMC"
         url "http://server.bbkr.space:8081/artifactory/libs-snapshot"
     }
+	maven {
+		name "Cloth"
+		url "https://maven.shedaniel.me/"
+	}
     jcenter()
 }
 
