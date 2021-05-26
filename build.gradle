@@ -23,6 +23,10 @@ repositories {
         name = 'JitPack'
         url = 'https://jitpack.io'
     }
+	maven {
+		name "Cloth"
+		url "https://maven.shedaniel.me/"
+	}
     jcenter()
     mavenCentral()
     mavenLocal()
