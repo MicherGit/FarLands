@@ -89,7 +89,7 @@ public abstract class WorldMixin {
             method = "<init>"
     )
     private void setSizeAndMaxRadius(MutableWorldProperties properties, RegistryKey<World> registryRef, DimensionType dimensionType, Supplier<Profiler> profiler, boolean isClient, boolean debugWorld, long seed, CallbackInfo ci) {
-        this.getWorldBorder().setMaxWorldBorderRadius(Integer.MAX_VALUE);
+        this.getWorldBorder().setMaxRadius(Integer.MAX_VALUE);
         this.getWorldBorder().setSize(Double.MAX_VALUE);
     }
 }

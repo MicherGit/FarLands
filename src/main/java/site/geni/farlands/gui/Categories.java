@@ -10,6 +10,7 @@ import net.minecraft.client.resource.language.I18n;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import site.geni.farlands.FarLands;
+import site.geni.farlands.gui.Categories.Fixes;
 import site.geni.farlands.gui.entries.EstimateListEntry;
 import site.geni.farlands.gui.entries.builders.EstimateFieldBuilder;
 import site.geni.farlands.gui.entries.builders.ScaleFieldBuilder;

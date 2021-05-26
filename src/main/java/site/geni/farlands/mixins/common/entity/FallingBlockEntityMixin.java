@@ -1,5 +1,6 @@
 package site.geni.farlands.mixins.common.entity;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.FallingBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -29,7 +30,7 @@ public abstract class FallingBlockEntityMixin extends EntityMixin {
 				|| this.getX() <= -Location.FAR_LANDS.getValue()
 				|| this.getZ() >= Location.FAR_LANDS.getValue()
 				|| this.getZ() <= -Location.FAR_LANDS.getValue())) {
-			this.remove();
+			this.remove(Entity.RemovalReason.KILLED);
 		}
 	}
 }

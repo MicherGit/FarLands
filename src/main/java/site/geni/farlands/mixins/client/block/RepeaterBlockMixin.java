@@ -58,7 +58,7 @@ public abstract class RepeaterBlockMixin extends HorizontalFacingBlockMixin {
 			double offsetX = float_1 * (float) direction.getOffsetX();
 			double offsetZ = float_1 * (float) direction.getOffsetZ();
 
-			world.addParticle(DustParticleEffect.RED, x + offsetX, y, z + offsetZ, 0.0D, 0.0D, 0.0D);
+			world.addParticle(DustParticleEffect.DEFAULT, x + offsetX, y, z + offsetZ, 0.0D, 0.0D, 0.0D);
 
 			ci.cancel();
 		}

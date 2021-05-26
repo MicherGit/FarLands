@@ -26,7 +26,7 @@ public abstract class EntityMixin {
             constant = @Constant(
                     doubleValue = -3.0E7D
             ),
-            method = "method_30634"
+            method = "updatePosition"
     )
     private static double clampPositionToNegativeDoubleMaxValueXZ(double original) {
         return -Double.MAX_VALUE;
@@ -43,7 +43,7 @@ public abstract class EntityMixin {
             constant = @Constant(
                     doubleValue = 3.0E7D
             ),
-            method = "method_30634"
+            method = "updatePosition"
     )
     private static double clampPositionToPositiveDoubleMaxValueXZ(double original) {
         return Double.MAX_VALUE;
@@ -85,5 +85,5 @@ public abstract class EntityMixin {
 
 
     @Shadow
-    public abstract void remove();
+    public abstract void remove(Entity.RemovalReason reason);
 }
